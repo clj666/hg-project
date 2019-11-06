@@ -86,7 +86,7 @@
     padding: 0.1rem 0rem 0rem 0.07rem;
     display: flex;
     flex-wrap: wrap;
-    
+    font-size: 0.15rem;
     a{
       flex: 1;
       width: 1.77rem;
@@ -95,8 +95,63 @@
         border-top-left-radius: 0.05rem;
         border-top-right-radius: 0.05rem;
       }
+      h1{
+        color: black;
+        letter-spacing: 0.01rem;
+        line-height: 0.18rem;
+        padding: 0.03rem;
+        height: 0.33rem;
+        overflow: hidden;       
+      }
+      p{
+        width: 1.77rem;
+        border-top: 1px solid #eee;
+        margin: 0.1rem 0.03rem;
+        padding-top: 0.1rem;
+        font-weight: bold;
+        color: #db4453;
+      }
     }
-    
   }
 }
+.h-public{
+  &::before{
+    content: '';
+    display: block;
+    width: 3.75rem;
+    height: 0.1rem;
+    background-color: #f5f5f5;
+  } 
+  ul{
+    display: flex;
+    border-top: 1px solid #eee;
+    padding: 0.1rem 0rem;
+    li{
+      flex: 1;
+      text-align: center;
+      border-right: 1px solid #eee;
+    }
+  }
+  div{
+    padding: 0rem 0.3rem;
+    display: flex;
+    justify-content: space-around;
+    a{
+      h1{
+        width: 0.38rem;
+        height: 0.38rem;
+        border: 1px solid #999;
+        border-radius: 50%;
+        background: url(../../assets/img/imgHome/foot_app.png) no-repeat 0.07rem 0.07rem;
+        background-size: 0.24rem;
+        opacity: .5;
+        p{
+          color: #eee;
+        }
+      }
+
+    }
+  }
+}
+
  

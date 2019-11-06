@@ -2,9 +2,7 @@
   <div class="swiper">
     <div class="swiper-container">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="../../assets/img/imgHome/s0_06171248454838164.jpg" /></div>
-        <div class="swiper-slide"><img src="../../assets/img/imgHome/s0_06183330536787614.jpg" /></div>
-        <div class="swiper-slide"><img src="../../assets/img/imgHome/s0_06190327556184413.jpg" /></div>
+        <div class="swiper-slide" :key="index" v-for="(n,index) in data"><img :src="n" /></div>
       </div>
     </div>
   </div>
@@ -15,6 +13,7 @@ import Swiper from 'swiper'
 import '../../assets/js/swiper.min.js'
 export default {
   name: "swiper",
+  props: ["data"],
   data() {
     return {
       msg: "Welcome to Your Vue.js App"

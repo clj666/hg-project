@@ -1,16 +1,22 @@
 module.exports = {
  getdata(){
-   let imgUrl = "http://www.hangowa.com/data/upload/";
    let shopInfo = 
    {
+   "swiper":["img/imgHome/s0_06171248454838164.jpg","img/imgHome/s0_06183330536787614.jpg",
+   "img/imgHome/s0_06190327556184413.jpg"],
+   "banner":"img/imgHome/s0_06069936293384117.jpg",
+   "hotProduct":["img/imgHome/s0_060649000.jpg","img/imgHome/s0_06064935587350615.jpg",
+   "img/imgHome/s0_06064937509453906.jpg"],
    "shops":[
       {
          "shopName":"荆门众邦特色馆",
-         "shopLogo":imgUrl+"shop/common/default_store_avatar.gif",
+         "shopLogo":"img/imgHome/",
          "shopFens":0,
+         "homeImg":"img/imgHome/s0_06166135951205538.jpg",
          "products":[
          {
-            "pImg":imgUrl+"mobile/special/s0/s0_06069936293384117.jpg",  
+            "pImg":["img/imgShops/15_05732170703268005_360.jpg","img/imgShops/15_05269897971967809_360.jpg","img/imgShops/15_05269900313406069_360.jpg","img/imgShops/15_05269900361435399_360.jpg","img/imgShops/15_05269900401043317_360.jpg"],
+            "pZQImg":"img/imgShops/s60_06002703950664573.jpg",  
             "pName":"特产稻香长粒大米10斤 非转基因长粒大米 香糯清甜",
             "pPrice":33.90,
             "pAllNum":50,  // 库存
@@ -20,7 +26,8 @@ module.exports = {
             "checked":false       // 是否选中
          },
          {
-            "pImg":"",  
+            "pImg":["img/imgShops/15_06149577383901171_360.jpg","img/imgShops/15_05836061572843922_360.jpg",
+            "img/imgShops/15_06149577027595173_360.jpg","img/imgShops/15_05836061144036352_360.jpg"],  
             "pName":"【农谷鲜】稻花香 冷泉米 5kg/包",
             "pPrice":38.90,
             "pAllNum":50,  // 库存
@@ -110,7 +117,7 @@ module.exports = {
             "checked":false       // 是否选中
          },
          {
-            "pImg":"",  
+            "pImg":["img/imgShops/15_06150299653473793_360.jpg"],  
             "pName":"果然 农谷鲜稻香米5kg",
             "pPrice":39.90,
             "pAllNum":50,  // 库存
@@ -123,7 +130,7 @@ module.exports = {
       },
       {
          "shopName":"农商互联自营旗舰店",
-         "shopLogo":imgUrl+"shop/common/default_store_avatar.gif",
+         "shopLogo":"img/imgHome/",
          "shopFens":0,
          "products":[
          {
@@ -137,7 +144,8 @@ module.exports = {
             "checked":false       // 是否选中
          },
          {
-            "pImg":"",  
+            "pImg":["img/imgShops/213_06245532263822161_360.jpg","img/imgShops/213_06245532582200853_360.jpg",
+            "img/imgShops/213_06245532609827782_360.jpg","img/imgShops/213_06245532630613484_360.jpg","img/imgShops/213_06245532678815953_360.jpg",],  
             "pName":"湖乡情·农谷鲜阳新湖香米5KG",
             "pPrice":29.90,
             "pAllNum":50,  // 库存
@@ -150,8 +158,9 @@ module.exports = {
       },
       {
          "shopName":"hangochina",
-         "shopLogo":imgUrl+"shop/common/default_store_avatar.gif",
+         "shopLogo":"img/imgHome/",
          "shopFens":0,
+         "homeImg":"img/imgHome/s0_06166136662682072.jpg",
          "products":[
          {
             "pImg":"",  
@@ -197,8 +206,9 @@ module.exports = {
       },
       {
          "shopName":"仙岛云购阳新馆",
-         "shopLogo":imgUrl+"shop/store/05788552462251291_sm.png",
+         "shopLogo":"img/imgshops/05788552462251291_sm.png",
          "shopFens":0,
+         "homeImg":"img/imgHome/s0_06064914759580108.png",
          "products":[
          {
             "pImg":"",  
@@ -311,7 +321,8 @@ module.exports = {
             "checked":false       // 是否选中
          },
          {
-            "pImg":"",  
+            "pImg":["img/imgShops/187_05838599144439223_360.jpg","img/imgShops/187_05838599273401660_360.jpg",
+            "img/imgShops/187_05838599170036691_360.jpg","img/imgShops/187_05838599234976840_360.jpg","img/imgShops/187_05838599227357073_360.jpg"],
             "pName":"手工儿童油面 皇家儿童油面 湖北特产手工油面 月子面 2斤散装",
             "pPrice":29.90,
             "pAllNum":50,  // 库存
@@ -321,7 +332,7 @@ module.exports = {
             "checked":false       // 是否选中
          },
          {
-            "pImg":"",  
+            "pImg":["img/imgShops/187_05841273671040892_360.jpg"],             
             "pName":"皇家儿童油面精品礼盒 湖北特产手工油面月子面礼品盒真空包装 2500g",
             "pPrice":148.00,
             "pAllNum":50,  // 库存
@@ -334,11 +345,11 @@ module.exports = {
       },
       {
          "shopName":"吾生缘食品专营店",
-         "shopLogo":imgUrl+"shop/common/default_store_avatar.gif",
+         "shopLogo":"img/imgHome/",
          "shopFens":0,
          "products":[
          {
-            "pImg":"",  
+            "pImg":["img/imgShops/254_06245339052774442_360.jpg","img/imgShops/254_06245341085944603_360.jpg","img/imgShops/254_06245341123472012_360.jpg","img/imgShops/254_06245341163882541_360.jpg","img/imgShops/254_06245341218877771_360.jpg",],  
             "pName":"龙涎柑 当季橙子橘子非耙耙柑丑橘果径65-75mm 4斤装",
             "pPrice":65.00,
             "pAllNum":50,  // 库存
@@ -351,11 +362,12 @@ module.exports = {
       },
       {
          "shopName":"丰裕农业自营旗舰店",
-         "shopLogo":imgUrl+"shop/common/default_store_avatar.gif",
+         "shopLogo":"img/imgHome/",
          "shopFens":0,
          "products":[
          {
-            "pImg":"",  
+            "pImg":["img/imgShops/250_06204047225633983_360.jpg","img/imgShops/250_06204047220772511_360.jpg",
+            "img/imgShops/250_06204047205028958_360.jpg","img/imgShops/250_06204047200799337_360.jpg","img/imgShops/250_06204047229809177_360.jpg",],  
             "pName":"七色谷呵护粥道900g", //
             "pPrice":29.90,
             "pAllNum":50,  // 库存
@@ -365,7 +377,8 @@ module.exports = {
             "checked":false       // 是否选中
          },
          {
-            "pImg":"",  
+            "pImg":["img/imgShops/250_06207399287274110_360.jpg","img/imgShops/250_06197169626683891_360.jpg",
+            "img/imgShops/250_06197169678455852_360.jpg","img/imgShops/250_06197169741342038_360.jpg","img/imgShops/250_06197169800142303_360.jpg"], 
             "pName":"七色谷珍珠米5kg",
             "pPrice":39.90,
             "pAllNum":50,  // 库存
@@ -378,11 +391,12 @@ module.exports = {
       },
       {
          "shopName":"天润酸奶专卖店",
-         "shopLogo":imgUrl+"shop/common/default_store_avatar.gif",
+         "shopLogo":"img/imgHome/",
          "shopFens":0,
          "products":[
          {
-            "pImg":"",  
+            "pImg":["img/imgShops/238_06150364566155086_360.jpg","img/imgShops/238_06150364665902026_360.jpg",
+            "img/imgShops/238_06150364688259435_360.jpg"],  
             "pName":"新疆天润奶啤酸奶含乳酸菌牛奶饮料300ml*12罐", 
             "pPrice":66.80,
             "pAllNum":50,  // 库存
@@ -392,17 +406,17 @@ module.exports = {
             "checked":false       // 是否选中
          },
          {
-            "pImg":"",  
+            "pImg":["img/imgShops/238_06150358792309486_360.jpg"],  
             "pName":"新疆天润牛奶蕉往甚欢香蕉牛奶浓缩纯牛奶200g*12袋",
             "pPrice":56.80,
             "pAllNum":50,  // 库存
             "pOutNum":0,   // 销量
             "pCartNum":0,  // 购物车数量
             "pLikeChecked":false,     // 是否收藏
-            "checked":false       // 是否选中
+            "checked":false       // 是否选中 
          },
          {
-            "pImg":"",  
+            "pImg":["img/imgShops/238_06150349752695535_360.jpg"],  
             "pName":"天润酸奶新疆特产巧克力碎了 180g*12袋/箱",
             "pPrice":56.80,
             "pAllNum":50,  // 库存
@@ -412,7 +426,7 @@ module.exports = {
             "checked":false       // 是否选中
          },
          {
-            "pImg":"",  
+            "pImg":["img/imgShops/238_06150345602667210_360.jpg","img/imgShops/238_06150346377605175_360.jpg"],
             "pName":"新疆天润酸奶冰淇淋化了180g*12袋/箱",
             "pPrice":56.80,
             "pAllNum":50,  // 库存
@@ -425,11 +439,12 @@ module.exports = {
       },
       {
          "shopName":"宜养食品专营店",
-         "shopLogo":imgUrl+"shop/common/default_store_avatar.gif",
+         "shopLogo":"img/imgHome/",
          "shopFens":0,
          "products":[
          {
-            "pImg":"",  
+            "pImg":["img/imgShops/243_06160713664662489_360.jpg","img/imgShops/243_06160713640723298_360.jpg",
+            "img/imgShops/243_06160713654566681_360.jpg","img/imgShops/243_06160713645369421_360.jpg","img/imgShops/243_06160713675043582_360.jpg"],  
             "pName":"宜养经典系列乳酸菌饮品 100ml*24瓶",
             "pPrice":26.00,
             "pAllNum":50,  // 库存
@@ -439,7 +454,8 @@ module.exports = {
             "checked":false       // 是否选中
          },
          {
-            "pImg":"",  
+            "pImg":["img/imgShops/243_06160711122563447_360.jpg","img/imgShops/243_06160711116231383_360.jpg",
+            "img/imgShops/243_06160711108747984_360.jpg","img/imgShops/243_06160711112645537_360.jpg","img/imgShops/243_06160711132936743_360.jpg"],  
             "pName":"宜养 香蕉乳酸菌饮品 100ml*24瓶",
             "pPrice":28.00,
             "pAllNum":50,  // 库存
@@ -449,7 +465,8 @@ module.exports = {
             "checked":false       // 是否选中
          },
          {
-            "pImg":"",  
+            "pImg":["img/imgShops/243_06160705125059330_360.jpg","img/imgShops/243_06160705125877536_360.jpg",
+            "img/imgShops/243_06160705131802386_360.jpg","img/imgShops/243_06160705139069067_360.jpg","img/imgShops/243_06160705129318845_360.jpg"], 
             "pName":"宜养香纯豆奶 250ml*15盒",
             "pPrice":35.00,
             "pAllNum":50,  // 库存
@@ -459,7 +476,8 @@ module.exports = {
             "checked":false       // 是否选中
          },
          {
-            "pImg":"",  
+            "pImg":["img/imgShops/243_06160702814710601_360.jpg","img/imgShops/243_06160702848482231_360.jpg",
+            "img/imgShops/243_06160702837898378_360.jpg","img/imgShops/243_06160702818899398_360.jpg","img/imgShops/243_06160702827680265_360.jpg"], 
             "pName":"宜养 香蕉牛奶 250ml*10盒",
             "pPrice":26.00,
             "pAllNum":50,  // 库存

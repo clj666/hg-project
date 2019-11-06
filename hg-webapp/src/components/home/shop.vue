@@ -1,11 +1,11 @@
 <template>
   <div class="h-shop">
     <div class="shop-l">
-      <a href=""><img src="../../assets/img/imgHome/s0_06166135951205538.jpg" /></a>
-      <a href=""><img src="../../assets/img/imgHome/s0_06166136662682072.jpg" /></a>
+      <a href=""><img :src="data[0].homeImg" /></a>
+      <a href=""><img :src="data[2].homeImg" /></a>
     </div>
     <div class="shop-r">
-      <a href=""><img src="../../assets/img/imgHome/s0_06064914759580108.png" /></a>
+      <a href=""><img :src="data[3].homeImg" /></a>
     </div>
   </div>
 </template>
@@ -13,9 +13,7 @@
 <script>
 export default {
   name: 'shop',
-  props: {
-    msg: String
-  }
+  props: ["data"],
 }
 </script>
 

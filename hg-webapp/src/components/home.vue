@@ -1,11 +1,12 @@
 <template>
   <div>
     <h-header></h-header>
-    <h-swiper></h-swiper>
+    <h-swiper :data="cartInfo.swiper" v-if="cartInfo.swiper"></h-swiper>
     <h-jump-page></h-jump-page>
-    <h-shop></h-shop>
-    <a href="/" class="banner marg-b"><img :src="cartInfo.shops[0].products[0].pImg" /></a>
-    <h-product></h-product>
+    <h-shop :data="cartInfo.shops" v-if="cartInfo.shops"></h-shop>
+    <a href="/" class="banner marg-b"><img :src="cartInfo.banner" v-if="cartInfo.banner"/></a>
+    <h-product :data="cartInfo" v-if="cartInfo"></h-product>
+    <h-public></h-public>
   </div>
 </template>
 
@@ -15,11 +16,11 @@ import swiper from './home/swiper'
 import jumpPage from './home/jump-page'
 import shop from './home/shop'
 import product from './home/product'
+import Public from './home/public'
 
-import cartApi from '../apis/cartApi'
+import cartApi from '../apis/cartApi'  // 导入数据
 export default {
   name: 'home',
-  props: '',
   data(){
     return {
       cartInfo: []
@@ -41,6 +42,7 @@ export default {
     'hJumpPage': jumpPage,
     'hShop': shop,
     'hProduct': product,
+    'hPublic': Public
   }
 }
 </script>
