@@ -1,0 +1,102 @@
+.h-header{
+  padding: 0.1rem 0.28rem 0.08rem 0.1rem;
+  background-color: #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  .logo{
+    width: 1.18rem;
+  }
+  input{
+    width: 1.67rem;
+    height: 0.33rem;
+    border: 0.005rem solid #c9c9c9;
+    border-radius: 0.2rem;
+    outline: none;
+    text-indent: 0.1rem;
+  }
+  .search{
+    width: 0.2rem;
+    position: absolute;
+    left: 2.8rem;
+  }
+  .cart{
+    width: 0.27rem;
+  }
+}
+.h-jump-page{
+  padding: .11rem 0rem .15rem;
+  line-height: 0.3rem;
+  display: flex;
+  justify-content: space-around;
+  a{
+    text-align: center;
+    h1{
+      width: .55rem;
+      height: .55rem;
+      border-radius: 50%;
+    }
+  }
+  a:nth-child(1){
+    h1{
+      background: #fb6e52 url(../../assets/img/imgHome/browse_list_w.png) no-repeat 0.13rem 0.13rem;
+      background-size: 0.28rem;
+    }
+  }
+  a:nth-child(2){
+    h1{
+      background: #48cfae url(../../assets/img/imgHome/cart_w.png) no-repeat 0.13rem 0.13rem;
+      background-size: 0.28rem;
+    }
+  }
+  a:nth-child(3){
+    h1{
+      background: #4bc1ec url(../../assets/img/imgHome/member_w.png) no-repeat 0.13rem 0.13rem;
+      background-size: 0.28rem;
+    }
+  }  
+}
+.h-shop{
+  display: flex;
+  .shop-l{
+    border-right: 1px solid #eee;
+    a{
+      img{
+        width: 1.87rem;
+        height: .725rem;
+        border-bottom: 1px solid #eee;
+        box-sizing: border-box;
+      }
+    }
+  }
+  .shop-r{
+      img{
+        width: 1.88rem; 
+        border-bottom: 1px solid #eee;
+      }
+    
+  }
+}
+.h-product{
+  img{
+    width: 3.75rem;
+  }
+  div{
+    padding: 0.1rem 0rem 0rem 0.07rem;
+    display: flex;
+    flex-wrap: wrap;
+    
+    a{
+      flex: 1;
+      width: 1.77rem;
+      img{
+        width: 1.77rem;
+        border-top-left-radius: 0.05rem;
+        border-top-right-radius: 0.05rem;
+      }
+    }
+    
+  }
+}
+ 
