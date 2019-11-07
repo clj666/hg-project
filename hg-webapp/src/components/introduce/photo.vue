@@ -2,8 +2,9 @@
   <div class="swiper">
     <div class="swiper-container">
       <div class="swiper-wrapper">
-        <div class="swiper-slide" :key="index" v-for="(n,index) in data"><img :src="n" /></div>
+        <div class="swiper-slide" :key="index" v-for="(n,index) in data.products[0].pImg"><img :src="n" /></div>
       </div>
+      <div class="swiper-pagination"></div>
     </div>
   </div>
 </template>
@@ -21,23 +22,19 @@ export default {
   },
   mounted() {
     new Swiper(".swiper-container", {
-      autoplay: true,   // 自动滑动
+      // autoplay: true,   // 自动滑动
       loop: true,   // 手动滑动
+      pagination: {
+        el: '.swiper-pagination',
+      },
     });
+    console.log(this.data);
   }
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-@import '../../../node_modules/swiper/css/swiper.min.css';
-.swiper-container {
-  width: 3.75rem;
-  height: 1.55rem;
-  margin: 0 auto;
-}
-.swiper-slide>img{
-  width: 3.75rem;
-  height: 1.55rem;
-}
+<style lang="scss" scoped>
+  @import '../../../node_modules/swiper/css/swiper.min.css';
+  @import '../../assets/css/introduce';
 </style>

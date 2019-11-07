@@ -20,7 +20,9 @@
         <p>电脑版</p>
       </a>
     </div>
+    <h2>Copyright &copy; 2014-2016 汉购网 hangowa.com 版权所有</h2>
   </div>
+  
 </template>
 
 <script>

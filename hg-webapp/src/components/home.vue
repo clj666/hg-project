@@ -1,12 +1,15 @@
 <template>
-  <div>
-    <h-header></h-header>
-    <h-swiper :data="cartInfo.swiper" v-if="cartInfo.swiper"></h-swiper>
-    <h-jump-page></h-jump-page>
-    <h-shop :data="cartInfo.shops" v-if="cartInfo.shops"></h-shop>
-    <a href="/" class="banner marg-b"><img :src="cartInfo.banner" v-if="cartInfo.banner"/></a>
-    <h-product :data="cartInfo" v-if="cartInfo"></h-product>
-    <h-public></h-public>
+  <div class="con">
+    <div class="roll">
+      <h-header></h-header>
+      <h-swiper :data="cartInfo.swiper" v-if="cartInfo.swiper"></h-swiper>
+      <h-jump-page></h-jump-page>
+      <h-shop :data="cartInfo.shops" v-if="cartInfo.shops"></h-shop>
+      <a href="/" class="banner marg-b"><img :src="cartInfo.banner" v-if="cartInfo.banner"/></a>
+      <h-product :data="cartInfo" v-if="cartInfo"></h-product>
+      <h-public></h-public>
+    </div>
+    <pub-footer></pub-footer>
   </div>
 </template>
 
@@ -17,6 +20,7 @@ import jumpPage from './home/jump-page'
 import shop from './home/shop'
 import product from './home/product'
 import Public from './home/public'
+import footer from './public-footer'
 
 import cartApi from '../apis/cartApi'  // 导入数据
 export default {
@@ -30,6 +34,7 @@ export default {
   async _initHomeData() {
       let data = await cartApi.getHomeData()
       this.cartInfo = data;
+      console.log(data);
     }
   },
   beforeMount () {
@@ -42,7 +47,8 @@ export default {
     'hJumpPage': jumpPage,
     'hShop': shop,
     'hProduct': product,
-    'hPublic': Public
+    'hPublic': Public,
+    'pub-footer':footer
   }
 }
 </script>

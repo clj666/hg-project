@@ -13,9 +13,7 @@ router.all("*",(req,res,next)=>{
 })
 
 router.get("/",(req,res)=>{
-    res.json(shopsModel.getdata())
-    console.log(shopsModel.getdata());
-    
+    res.json(shopsModel.getdata())   
 	//{orders:orderarr}  绑定到order.ejs模板上
 })
 module.exports = router;

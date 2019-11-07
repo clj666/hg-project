@@ -4,6 +4,7 @@ import main from '../views/main'
 import home from '../components/home'
 import found from '../components/found'
 import mine from '../components/mine'
+import introduce from '../components/introduce'
 Vue.use(VueRouter)
 
 let router = new VueRouter({
@@ -23,6 +24,10 @@ let router = new VueRouter({
         {
           path: '/mine',
           component: mine
+        },
+        {
+          path: '/introduce',
+          component: introduce
         },
       ]
     }

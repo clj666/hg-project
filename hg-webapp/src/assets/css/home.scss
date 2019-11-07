@@ -125,7 +125,7 @@
   ul{
     display: flex;
     border-top: 1px solid #eee;
-    padding: 0.1rem 0rem;
+    padding: 0.15rem 0rem;
     li{
       flex: 1;
       text-align: center;
@@ -133,13 +133,17 @@
     }
   }
   div{
-    padding: 0rem 0.3rem;
+    padding: 0.08rem 0.3rem;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
     a{
       h1{
         width: 0.38rem;
-        height: 0.38rem;
+        height: 0.38rem;    
+        margin-bottom: 0.05rem;  
         border: 1px solid #999;
         border-radius: 50%;
         background: url(../../assets/img/imgHome/foot_app.png) no-repeat 0.07rem 0.07rem;
@@ -148,9 +152,32 @@
         p{
           color: #eee;
         }
-      }
-
+      }      
     }
+    a:nth-child(2){
+      h1{
+        background: url(../../assets/img/imgHome/foot_touch.png) no-repeat 0.07rem 0.07rem;
+        background-size: 0.24rem;
+        border: 1px solid #000;
+        opacity: 1;
+      }
+      p{
+        color: #000;
+      }
+    }
+    a:nth-child(3){
+      h1{
+        background: url(../../assets/img/imgHome/foot_pc.png) no-repeat 0.07rem 0.07rem;
+        background-size: 0.24rem;
+      }
+    }
+  }
+  h2{
+    font-size: 0.1rem;
+    text-align: center;
+    letter-spacing: -0.01rem;
+    padding: 0.1rem 0rem;
+    color: #333;
   }
 }
 

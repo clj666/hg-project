@@ -1,14 +1,19 @@
 <template>
-  <div>
-    <h1>found</h1>
+  <div class="con">
+    <div class="roll">found</div>
+    <pub-footer></pub-footer>
   </div>
 </template>
 
 <script>
+import footer from './public-footer'
 export default {
   name: 'found',
   props: {
     msg: String
+  },
+  components: {
+    'pub-footer':footer
   }
 }
 </script>
