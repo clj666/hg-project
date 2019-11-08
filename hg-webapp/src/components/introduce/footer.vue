@@ -4,12 +4,12 @@
       <img src="../../assets/img/imgShops/kefu_b.png" />
       <p>客服</p>
     </a>
-    <a href="#/found">
+    <a href="#/cart">
       <img src="../../assets/img/imgShops/cart_b.png" />
       <p>购物车</p>
     </a>
     <span>立即购买</span>
-    <span>加入购物车</span>
+    <span @click="Join">加入购物车</span>
 </div>
   
 </template>
@@ -17,7 +17,12 @@
 <script>
 export default {
   name: 'Ifooter',
-  props: '',
+  props: ['id'],
+  methods:{
+    Join(){
+      this.$bus.$emit("xx",this.id)
+    }
+  }
 }
 </script>
 

@@ -1,17 +1,17 @@
 <template>
 <div class="intr-header">
   <div class="intr-header1" v-if="show">
-    <span></span>
-    <span></span>
+    <span @click="goback"></span>
+    <span @click="showOther"></span>
   </div>
   <div class="intr-header2" name = "fade" v-else>
-    <span></span>
+    <span @click="goback"></span>
     <div>
       <a href="/">商品</a>
       <a href="/">详情</a>
       <a href="/">评价</a>
     </div>
-    <span></span>
+    <span @click="showOther"></span>
   </div>
 </div>
   
@@ -23,21 +23,32 @@ export default {
   props: '',
   data(){
     return {
-      show: true
+      show: true,
+      outbox: false
     }
   },
   mounted(){
-    window.addEventListener('scroll',this.handleScroll,true)
+    window.addEventListener('scroll',this.handleScroll,true);  
+  },
+  beforeDestroy() {
+    window.removeEventListener("scroll",this.handleScroll,true)
   },
   methods:{
     handleScroll(e){
-      if(e.target.scrollTop > 50){
+      let h = document.querySelector(".intr-header");
+      if( h && e.target.scrollTop > 50){
         this.show = false;
-        document.querySelector(".intr-header").style.position = "fixed";
+        h.style.position = "fixed";
       }else{
         this.show = true;
-        document.querySelector(".intr-header").style.position = "relative";
+        h.style.position = "relative";
       }
+    },
+    showOther(){
+      this.outbox = true;
+    },
+    goback(){
+      window.history.back(-1);
     }
   }
 }

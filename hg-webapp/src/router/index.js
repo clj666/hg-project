@@ -5,6 +5,7 @@ import home from '../components/home'
 import found from '../components/found'
 import mine from '../components/mine'
 import introduce from '../components/introduce'
+import cart from '../components/cart'
 Vue.use(VueRouter)
 
 let router = new VueRouter({
@@ -26,8 +27,12 @@ let router = new VueRouter({
           component: mine
         },
         {
-          path: '/introduce',
+          path: '/introduce/:id',
           component: introduce
+        },
+        {
+          path: '/cart',
+          component: cart
         },
       ]
     }

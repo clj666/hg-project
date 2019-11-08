@@ -1,8 +1,8 @@
 <template>
   <div class="swiper">
     <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide" :key="index" v-for="(n,index) in data.products[0].pImg"><img :src="n" /></div>
+      <div class="swiper-wrapper" v-if="data">
+        <div class="swiper-slide" :key="index"  v-for="(n,index) in data[sId].products[pId].pImg"><img :src="n" /></div>
       </div>
       <div class="swiper-pagination"></div>
     </div>
@@ -14,21 +14,15 @@ import Swiper from 'swiper'
 import '../../../node_modules/swiper/js/swiper'
 export default {
   name: "swiper",
-  props: ["data"],
-  data() {
-    return {
-      msg: "Welcome to Your Vue.js App"
-    };
-  },
+  props: ["data","sId","pId"],
   mounted() {
     new Swiper(".swiper-container", {
-      // autoplay: true,   // 自动滑动
+      autoplay: true,   // 自动滑动
       loop: true,   // 手动滑动
       pagination: {
         el: '.swiper-pagination',
       },
     });
-    console.log(this.data);
   }
 };
 </script>

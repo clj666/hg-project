@@ -1,8 +1,8 @@
 <template>
 <div class="marg-b">
   <div class="intr-about">
-      <h1>七色谷呵护粥道</h1>
-      <h2><p><span>￥</span>29.90</p><h3>销量：362件</h3></h2>
+      <h1>{{data[sId].products[pId].pName}}</h1>
+      <h2><p><span>￥</span>{{data[sId].products[pId].pPrice}}</p><h3>销量：362件</h3></h2>
       <div class="send">
         <div>送至</div>
         <div class="area">
@@ -12,8 +12,8 @@
         </div>
       </div>
       <div class="selected">
-        已选
-        <span>默认</span>
+        <div>已选<span>默认</span></div> 
+        <h3 class="right-del"></h3>
       </div>
   </div>
 </div>
@@ -24,7 +24,7 @@
 <script>
 export default {
   name: 'Iabout',
-  props: '',
+  props: ['data','sId','pId'],
 }
 </script>
 

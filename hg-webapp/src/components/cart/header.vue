@@ -1,18 +1,13 @@
 <template>
-  <div class="marg-b">
-    <div class="intr-appraise">
-      <h1>商品评价 <span>好评率 100%</span></h1>
-      <h2>（<span>1</span>人评价）</h2>
-      <h3 class="right-del"></h3>
-    </div>
+  <div class="c-header">
+      
   </div>
-  
   
 </template>
 
 <script>
 export default {
-  name: 'Iappraise',
+  name: 'Cheader',
   props: '',
 }
 </script>
