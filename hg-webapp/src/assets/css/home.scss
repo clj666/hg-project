@@ -4,17 +4,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
   .logo{
     width: 1.18rem;
   }
   input{
-    width: 1.67rem;
+    width: 1.37rem;
     height: 0.33rem;
     border: 0.005rem solid #c9c9c9;
     border-radius: 0.2rem;
     outline: none;
     text-indent: 0.1rem;
+		padding-right: 0.3rem;
   }
   .search{
     width: 0.2rem;

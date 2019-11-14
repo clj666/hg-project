@@ -9,7 +9,6 @@
         <intr-shop  :data="cartInfo.shops" :sId="sId"></intr-shop>
         <intr-recommend  :data="cartInfo.shops" :sId="sId"></intr-recommend>
       </div>
-      
     </div>
     <intr-footer :id="id"></intr-footer>
   </div>
@@ -25,28 +24,29 @@ import shop from './introduce/shop'
 import recommend from './introduce/recommend'
 
 import cartApi from '../apis/cartApi'  // 导入数据
+// import { mapGetters } from 'vuex'
 export default {
   name: 'introduce',
   data(){
     return {
-      cartInfo: [],
+			cartInfo:[],
       sId: 0,
       pId: 0,
       id:''
     }
   },
-  methods: {
-  async _initHomeData() {
-      let data = await cartApi.getHomeData()
-      this.cartInfo = data;
-      this.sId = Number(this.$route.params.id.substr(0,2));
-      this.pId = Number(this.$route.params.id.substr(2,2));
-      this.id = this.$route.params.id;
-    }
-  },
-  beforeMount () {
-    this._initHomeData()
-  },
+	methods:{
+		async _initHomeData() {
+				let data = await cartApi.getHomeData()
+				this.cartInfo = data;
+				this.sId = Number(this.$route.params.id.substr(0,2));
+				this.pId = Number(this.$route.params.id.substr(2,2));
+				this.id = this.$route.params.id;
+			}
+		},
+	beforeMount () {
+		this._initHomeData()
+	},
   components: {
     'intr-header': header,
     'intr-footer': footer,

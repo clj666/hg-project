@@ -20,7 +20,7 @@ export default {
   props: ['id'],
   methods:{
     Join(){
-      this.$bus.$emit("xx",this.id)
+      this.$store.dispatch('INITCART',this.id)
     }
   }
 }

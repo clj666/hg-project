@@ -4,7 +4,7 @@
     <span @click="goback"></span>
     <span @click="showOther"></span>
   </div>
-  <div class="intr-header2" name = "fade" v-else>
+  <div class="intr-header2" v-else>
     <span @click="goback"></span>
     <div>
       <a href="/">商品</a>
@@ -48,7 +48,7 @@ export default {
       this.outbox = true;
     },
     goback(){
-      window.history.back(-1);
+				window.history.back(-1)
     }
   }
 }

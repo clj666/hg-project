@@ -142,8 +142,9 @@ module.exports = {
          },
          {
             "pId":"0202",
-            "pImg":["img/imgShops/194_06195258166943025_360.jpg"],
-            "pName":"汉美特德国进口花果茶80g", 
+            "pImg":["img/imgShops/202_05853962909560687_360.jpg","img/imgShops/202_05853975848704294_360.jpg",
+			"img/imgShops/202_05853977026914530_360.jpg","img/imgShops/202_05853977913105215_360.jpg","img/imgShops/202_05853978536829626_360.jpg"],
+            "pName":"汉美特飨茶~德国进口花果茶", 
             "pPrice":98.00,
             "pAllNum":50,  // 库存
             "pOutNum":0,   // 销量
@@ -163,6 +164,30 @@ module.exports = {
             "pLikeChecked":false,     // 是否收藏
             "checked":false       // 是否选中
          },
+		 {
+		    "pId":"0204",
+		    "pImg":["img/imgShops/194_06139106559682367_360.jpg","img/imgShops/194_06139108050536450_360.jpg",
+		    "img/imgShops/194_06139108085836676_360.jpg","img/imgShops/194_06139108137791620_360.jpg","img/imgShops/194_06139108220769710_360.jpg"],  
+		    "pName":"汉美特神农架野生黑木耳干黑木耳", 
+		    "pPrice":37.50,
+		    "pAllNum":50,  // 库存
+		    "pOutNum":0,   // 销量
+		    "pCartNum":0,  // 购物车数量
+		    "pLikeChecked":false,     // 是否收藏
+		    "checked":false       // 是否选中
+		 },
+		 {
+		    "pId":"0205",
+		    "pImg":["img/imgShops/202_05854092634625425_360.jpg","img/imgShops/202_05854859271908140_360.jpg",
+			"img/imgShops/202_05854859736437413_360.jpg","img/imgShops/202_05854862220312683_360.jpg","img/imgShops/202_05854861928526879_360.jpg"],
+		    "pName":"汉美特飨茶~红茶/绿茶系列", 
+		    "pPrice":98.00,
+		    "pAllNum":50,  // 库存
+		    "pOutNum":0,   // 销量
+		    "pCartNum":0,  // 购物车数量
+		    "pLikeChecked":false,     // 是否收藏
+		    "checked":false       // 是否选中
+		 },
          ]
       },
       {

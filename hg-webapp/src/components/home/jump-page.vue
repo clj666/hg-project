@@ -20,7 +20,7 @@ export default {
   name: 'jumpPage',
   props: {
     msg: String
-  }
+  },
 }
 </script>
 

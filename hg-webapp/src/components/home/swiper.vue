@@ -34,7 +34,7 @@ export default {
 .swiper-container {
   width: 3.75rem;
   height: 1.55rem;
-  margin: 0 auto;
+  margin-top: 0.6rem;
 }
 .swiper-slide>img{
   width: 3.75rem;

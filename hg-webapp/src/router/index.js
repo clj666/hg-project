@@ -6,6 +6,10 @@ import found from '../components/found'
 import mine from '../components/mine'
 import introduce from '../components/introduce'
 import cart from '../components/cart'
+import login from '../components/login'
+import register from '../components/register'
+import shop from '../components/shop'
+
 Vue.use(VueRouter)
 
 let router = new VueRouter({
@@ -34,6 +38,18 @@ let router = new VueRouter({
           path: '/cart',
           component: cart
         },
+				{
+					path: '/login',
+					component: login
+				},
+				{
+					path: '/register',
+					component: register
+				},
+				{
+					path: '/shop',
+					component: shop
+				},
       ]
     }
    

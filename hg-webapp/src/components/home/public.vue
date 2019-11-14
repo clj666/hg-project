@@ -2,7 +2,7 @@
   <div class="h-public">
     <ul>
       <li><a href="#/mine">我的商城</a></li>
-      <li><a href="/">注销</a></li>
+      <li><a href="/" @click="zhuxiao">注销</a></li>
       <li><a href="/">反馈</a></li>
       <li><a href="/">返回顶部</a></li>
     </ul>
@@ -28,6 +28,11 @@
 <script>
 export default {
   name: 'public',
+	methods:{
+		zhuxiao(){
+			localStorage.user1 = false;
+		}
+	}
 }
 </script>
 

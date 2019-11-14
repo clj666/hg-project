@@ -1,6 +1,7 @@
 const express = require("express")
 const router = express.Router()
 const shopsModel = require("../data/shopsAll")
+const foundModel = require("../data/found")
 //允许跨域设置
 
 router.all("*",(req,res,next)=>{
@@ -14,6 +15,8 @@ router.all("*",(req,res,next)=>{
 
 router.get("/",(req,res)=>{
     res.json(shopsModel.getdata())   
-	//{orders:orderarr}  绑定到order.ejs模板上
-})
+});
+router.get("/found",(req,res)=>{
+    res.json(foundModel.getdata())   
+});
 module.exports = router;

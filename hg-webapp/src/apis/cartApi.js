@@ -1,5 +1,6 @@
-const BASEURL='http://39.106.101.238:3001'
+const BASEURL='http://39.107.120.161:3000'
 const CARTURL = `${BASEURL}/cars`
+const FOUNDURL = `${BASEURL}/cars/found`
 export default {
   /**
      * 获取店铺的信息
@@ -10,18 +11,14 @@ export default {
     return data
   },
 
-   /**
-     * 获取店铺的信息
-     */
-    // getCartInfoByUserId(cb){
-    //     fetch(CARTURL).then(res=>{
-    //         res.json().then(cb)
-    //     })
-    // }
-   // home数据获取
   async getHomeData () {
-    let res = await fetch('http://localhost:3000/cars')
+    let res = await fetch(CARTURL)
     let data = await res.json()  
     return data
-  }
+  },
+	async getFoundData () {
+		let res = await fetch(FOUNDURL)
+		let data = await res.json()  
+		return data
+	}
 }

@@ -1,11 +1,11 @@
 <template>
   <div class="h-shop">
     <div class="shop-l">
-      <a href=""><img :src="data[0].homeImg" /></a>
-      <a href=""><img :src="data[2].homeImg" /></a>
+      <a href="#/shop"><img :src="data[0].homeImg" /></a>
+      <a href="#/shop"><img :src="data[2].homeImg" /></a>
     </div>
     <div class="shop-r">
-      <a href=""><img :src="data[3].homeImg" /></a>
+      <a href="#/shop"><img :src="data[3].homeImg" /></a>
     </div>
   </div>
 </template>

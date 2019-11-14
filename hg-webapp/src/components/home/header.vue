@@ -1,5 +1,5 @@
 <template>
-  <div class="h-header">
+  <div class="h-header fixed-head" >
     <img src="../../assets/img/imgHome/home_logo.png" class="logo"/>
     <input type="text" />
     <img src="../../assets/img/imgHome/search_ico.png" class="search"/>
